@@ -1,0 +1,4 @@
+# 开发dev，生产环境prod
+spring:
+  profiles:
+    active: dev
