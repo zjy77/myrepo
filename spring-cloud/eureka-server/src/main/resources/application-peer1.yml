@@ -1,0 +1,14 @@
+# 用于配置多个服务中心节点
+spring:
+  application:
+    name: eureka-client #服务名
+server:
+  port: 1111
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true #代表向注册中心注册自己
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:1112/eureka/
